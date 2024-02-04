@@ -4,8 +4,12 @@ $gradient:  linear-gradient(#5353e1, #323293);
 
 .search-bar {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
   }
   
   input[type=text] {

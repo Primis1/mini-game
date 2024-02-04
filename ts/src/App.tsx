@@ -1,6 +1,6 @@
+import './reset.css'
 import  Input  from './components/input.tsx'
 import  Wave  from './components/wave.tsx'
-import './reset.css'
 
 export default function App() {
   
@@ -8,10 +8,10 @@ export default function App() {
   return(
     <section className='search-bar'>
 
-    <Input />
+      <Input />
 
-     <Wave />
-
+      <Wave  />
+      
     </section>
   )
 
