@@ -7,11 +7,13 @@ export default function App() {
 
   return(
     <section className='search-bar'>
+      <div className="container">
 
-      <Input />
+        <Input />
 
-      <Wave  />
-      
+        <Wave  />
+        
+      </div>
     </section>
   )
 

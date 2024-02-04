@@ -7,6 +7,9 @@ $gradient:  linear-gradient(#5353e1, #323293);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
+
+    position: relative;
     width: auto;
     height: 100vh;
     overflow: hidden;
