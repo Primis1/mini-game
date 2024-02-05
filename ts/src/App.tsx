@@ -1,22 +1,31 @@
 import './reset.css'
-import  Input  from './components/input.tsx'
-import  Wave  from './components/wave.tsx'
+import  Input  from './components/input/input.tsx'
+import  Wave  from './components/wave/wave.tsx'
+import  Header  from './components/header/header.tsx'
 
 export default function App() {
   
 
   return(
-    <section className='search-bar'>
-      <div className="container">
-
-        <Input />
-
-        <Card />
-
-        <Wave  />
+    <>
+        <header>
+          <Header />
+        </header>
         
-      </div>
-    </section>
+        <section className='search-bar'>
+          <div className="container">
+
+            <Input />
+
+            <Card />
+
+          </div>        
+        </section>        
+    
+        <footer>        
+          <Wave />
+        </footer>
+    </>
   )
 
 }

@@ -7,7 +7,6 @@ import { faMapPin } from "@fortawesome/free-solid-svg-icons";
 export function Header() {
       
     return (
-        <header>
           <div className='container'>
             <div className="header__inner">
               <p className='logo__inner'>Mississauga<FontAwesomeIcon icon={ faMapPin } /></p>
@@ -21,6 +20,5 @@ export function Header() {
               </div>
             </div>
           </div>
-        </header>
     )
   }

@@ -1,4 +1,8 @@
+$tr-20: translate3d(0, 0, -20px);
+$tr20: translate3d(0, 0, 20px);
+
 .ocean {
+  z-index: -1;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -16,25 +20,25 @@
   filter: brightness(110%);
 
   transform: translate3d(0, 0, 0);
-}
 
-@keyframes wave {
-  0% {
-    margin-left: 0;
-    transform: translate3d(0, 0, -20px);
-  }
-  25% {
-    transform: translate3d(0, 0, 20px);
-  }
-  50% {
-    margin-left: -1600px;
-    transform: translate3d(0, 0, 50);
-  }
-  75% {
-    transform: translate3d(0, 0, 20px);
-  }
-  100% {
-    margin-left: 0;
-    transform: translate3d(0, 0, -20px);
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+      transform: $tr-20;
+    }
+    25% {
+      transform: $tr20;
+    }
+    50% {
+      margin-left: -1600px;
+      transform: translate3d(0, 0, 50);
+    }
+    75% {
+      transform: $tr20;
+    }
+    100% {
+      margin-left: 0;
+      transform: $tr-20;
+    }
   }
 }
