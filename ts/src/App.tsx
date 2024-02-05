@@ -11,6 +11,8 @@ export default function App() {
 
         <Input />
 
+        <Card />
+
         <Wave  />
         
       </div>
