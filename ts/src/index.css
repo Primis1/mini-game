@@ -26,10 +26,15 @@ a {
 }
 
 .container {
-
+  height: auto;
+  width: auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 footer{
+  overflow-x: hidden;
+  position: relative;
   height: 200px;
   width: auto;
 }

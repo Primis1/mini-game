@@ -24,7 +24,7 @@ $gradient:  linear-gradient(#5353e1, #323293);
     color: white;
   }
   
-  button {
+  .btn-input {
     margin-left: 5px;
     background: $gradient;
     border-radius: 50%;
@@ -35,11 +35,11 @@ $gradient:  linear-gradient(#5353e1, #323293);
   }
   
   
-  button:hover {
+  .btn-input:hover {
     filter: brightness(120%);
   }
   
-  button:active {
+  .btn-input:active {
     background: $gradient;
     filter: brightness(80%);
   }

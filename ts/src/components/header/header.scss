@@ -28,15 +28,9 @@ header {
       padding-left: 30px;
   }
   
-  .fa-cloud-moon {
-    color: white;
-    font-size: 50px;
-  } 
-  
-  
-  .fa-github,
-  .fa-telegram, 
-  .fa-instagram {
+  .FaGithub,
+  .FaTelegram, 
+  .FaInstagram {
       color: white;
       font-size: 30px;
       transition: all ease-in-out 0.2s;
@@ -56,16 +50,6 @@ header {
     .btn__inner {
       padding-left: 10px;
   }
-  
-  header{
-    padding-left: 10px;
-  }
-  }
-  
-  .fa-map-pin {
-    padding-left: 10px;
-    font-size: 20px;
-    color: white;
   }
   
     .fa-telegram:hover {
@@ -82,4 +66,29 @@ header {
     .fa-github:hover {
       filter: drop-shadow(0 0.2rem 0.25rem rgba(255, 255, 255, 0.5));
       transform: scaleX(1.2) scaleY(1.2);
+    }
+
+    .btn {
+      /* box-sizing: content-box; */
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border-style: none;
+      border-radius: 30px;
+      padding: 10px 30px;
+      /* width: 200px;
+      height: 60px; */
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: medium;
+      transition: all 0.1s;
+    }
+    
+    .btn:hover {
+      filter: drop-shadow(0 0.2rem 0.25rem rgba(255, 255, 255, 0.5));
+    }
+    
+    .btn:active {
+      background-color: rgba(255, 255, 255, 0.5);
+      filter: none;
     }

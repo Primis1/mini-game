@@ -8,7 +8,7 @@ export default function Input() {
     return(
         <form>
             <input type="text" placeholder='Type something'/>
-            <button type='submit'><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+            <button className='btn-input' type='submit'><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
         </form>
     )
 }

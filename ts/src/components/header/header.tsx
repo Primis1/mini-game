@@ -1,22 +1,19 @@
-import './reset.css'
 import './header.scss'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faTelegram, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faMapPin } from "@fortawesome/free-solid-svg-icons";
+import { FaGithub, FaTelegram, FaInstagram } from "react-icons/fa";
 
-export function Header() {
+export default function Header() {
       
     return (
           <div className='container'>
             <div className="header__inner">
-              <p className='logo__inner'>Mississauga<FontAwesomeIcon icon={ faMapPin } /></p>
+              <p className='logo__inner'>Mississauga</p>
             
               <div className='items'>
-                <ul><a href="https://github.com/Primis1" target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a></ul>
-                <ul><a href="https://www.instagram.com/o_olb_/" target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></ul>
-                <ul><a href="https://t.me/o_odone" target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faTelegram} /></a></ul>
+                <ul><a href="https://github.com/Primis1" target='_blank' rel="noreferrer"><FaGithub className="fa-github"/></a></ul>
+                <ul><a href="https://www.instagram.com/o_olb_/" target='_blank' rel="noreferrer"><FaInstagram /></a></ul>
+                <ul><a href="https://t.me/o_odone" target='_blank' rel="noreferrer"><FaTelegram /></a></ul>
 
-                <div className='btn__inner'><button>Blog</button></div>
+                <div className='btn__inner'><button className='btn'>Blog</button></div>
               </div>
             </div>
           </div>
