@@ -9,7 +9,7 @@ export default function App() {
 
   return(
     <>
-        <header>
+        <header className="header + {'hover' === true ? stroke : ''}">
           <Header />
         </header>
         
