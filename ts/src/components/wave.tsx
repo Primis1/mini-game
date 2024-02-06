@@ -4,7 +4,7 @@ export default function Wave() {
 
     return (
         <div className="ocean">
-            <div className="wave" />
+            <img className="wave" />
         </div>
     )
 }

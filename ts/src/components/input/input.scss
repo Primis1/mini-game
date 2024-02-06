@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
-$gradient:  linear-gradient(#5353e1, #323293);
+$gradient: linear-gradient(#ce3975, #8e96f1);
 
 .search-bar {
     display: flex;
@@ -16,30 +16,29 @@ $gradient:  linear-gradient(#5353e1, #323293);
     height: auto;
     width: 500px;
     border-radius: 25px;
-  
     border: none;
-  }
-  
-  .fa-magnifying-glass {
-    color: white;
-  }
-  
-  .btn-input {
-    margin-left: 5px;
-    background: $gradient;
-    border-radius: 50%;
-    height: 33.2px;
-    width: 33.2px;
-  
-    border: none;
-  }
-  
-  
-  .btn-input:hover {
-    filter: brightness(120%);
-  }
-  
-  .btn-input:active {
-    background: $gradient;
-    filter: brightness(80%);
+
+    .fa-magnifying-glass {
+      color: white;
+    }
+    
+    .btn-input {
+      margin-left: 5px;
+      background: $gradient;
+      border-radius: 50%;
+      height: 33.2px;
+      width: 33.2px;
+    
+      border: none;
+    }
+    
+    
+    .btn-input:hover {
+      filter: brightness(120%);
+    }
+    
+    .btn-input:active {
+      background: $gradient;
+      filter: brightness(80%);
+    }
   }
