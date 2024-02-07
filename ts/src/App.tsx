@@ -18,7 +18,11 @@ export default function App() {
 
             <Input />
 
-            <Card />
+            <Card 
+              name={}
+              province={}
+              site={}
+            />
 
           </div>        
         </section>        
