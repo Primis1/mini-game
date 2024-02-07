@@ -9,7 +9,7 @@ export default function Header() {
               <p className='logo__inner'>Mississauga</p>
             
               <div className='items'>
-                <ul><a href="https://github.com/Primis1" target='_blank' rel="noreferrer"><FaGithub className="fa-github"/></a></ul>
+                <ul><a href="https://github.com/Primis1" target='_blank' rel="noreferrer"><FaGithub/></a></ul>
                 <ul><a href="https://www.instagram.com/o_olb_/" target='_blank' rel="noreferrer"><FaInstagram /></a></ul>
                 <ul><a href="https://t.me/o_odone" target='_blank' rel="noreferrer"><FaTelegram /></a></ul>
 

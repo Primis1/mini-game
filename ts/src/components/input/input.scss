@@ -22,23 +22,24 @@ $gradient: linear-gradient(#ce3975, #8e96f1);
       color: white;
     }
     
-    .btn-input {
-      margin-left: 5px;
-      background: $gradient;
-      border-radius: 50%;
-      height: 33.2px;
-      width: 33.2px;
-    
-      border: none;
+    .btn_2 {
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border-style: none;
+      border-radius: 30px;
+      padding: 8px 10px;
+      cursor: pointer;
+      font: 15px medium;
+      transition: all 0.1s;
     }
     
-    
-    .btn-input:hover {
-      filter: brightness(120%);
+    .btn_2:hover {
+      filter: drop-shadow(0 0.2rem 0.25rem rgba(255, 255, 255, 0.5));
     }
     
-    .btn-input:active {
-      background: $gradient;
-      filter: brightness(80%);
+    .btn_2:active {
+      background-color: rgba(255, 255, 255, 0.5);
+      filter: none;
     }
   }
