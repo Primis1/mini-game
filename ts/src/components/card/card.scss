@@ -1,21 +1,18 @@
-.inner__wrapper {
+.line__wrapper {
     width: auto;
-    height: auto;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px 25px;
-    min-height: fit-content;
-    width: 1000px;
-    max-height: 1000px;
     background-color: rgba(81, 81, 81, 0.37);
     border-radius: 25px;
     backdrop-filter: blur(5px);
 
     .line__inner {
         display: flex;
-        justify-content: space-between;
+
         align-items: center;
         padding: 5px 25px;
         background-color: rgba(81, 81, 81, 0.37);
@@ -23,7 +20,8 @@
         backdrop-filter: blur(5px);
     }
 
-    .line {
+    .line {        
+        justify-content: space-between;
         display: flex;
         align-items: center;
         justify-content: center;
