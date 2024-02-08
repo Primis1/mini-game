@@ -3,11 +3,6 @@ header {
     position: sticky;
   }
   
-  header:hover {
-    filter: brightness(120%);
-    border: 2px white;
-  }
-  
   .header__inner {
       color: white;
       font-size: large;
@@ -18,9 +13,10 @@ header {
       background-color: rgba(81, 81, 81, 0.37);
       border-radius: 25px;
       backdrop-filter: blur(5px);
-      
-    
+    }
 
+    .header__inner:hover {
+      filter: brightness(120%);
     }
   
   .items {
@@ -35,46 +31,23 @@ header {
   .btn__inner {
       padding-left: 30px;
   }
-  
-  .FaGithub,
-  .FaTelegram, 
-  .FaInstagram {
+
+  .fa-github-alt,
+  .fa-telegram, 
+  .fa-instagram{
       color: white;
       font-size: 30px;
       transition: all ease-in-out 0.2s;
       padding: 0px 10px;
   }
   
-  @media only screen and (max-width: 490px){
-    .fa-github,
-    .fa-telegram, 
-    .fa-instagram {
-        color: white;
-        font-size: 20px;
-        transition: all ease-in-out 0.2s;
-        padding: 0px 5px;
-    }
-  
-    .btn__inner {
-      padding-left: 10px;
-  }
-  }
-  
-    .fa-telegram:hover {
+  .fa-github-alt:hover,
+  .fa-telegram:hover, 
+  .fa-instagram:hover {
       filter: drop-shadow(0 0.2rem 0.25rem rgba(255, 255, 255, 0.5));
       transform: scaleX(1.2) scaleY(1.2);
     }
-    
-    .fa-instagram:hover {
-      filter: drop-shadow(0 0.2rem 0.25rem rgba(255, 255, 255, 0.5));
-      transform: scaleX(1.2) scaleY(1.2);
-    }
-    
-  
-    .fa-github:hover {
-      filter: drop-shadow(0 0.2rem 0.25rem rgba(255, 255, 255, 0.5));
-      transform: scaleX(1.2) scaleY(1.2);
-    }
+
 
     .btn {
       text-align: center;
@@ -99,3 +72,18 @@ header {
     }
 
   
+
+    @media only screen and (max-width: 490px){
+      .fa-github-alt,
+      .fa-telegram, 
+      .fa-instagram {
+          color: white;
+          font-size: 20px;
+          transition: all ease-in-out 0.2s;
+          padding: 0px 5px;
+      }
+    
+      .btn__inner {
+        padding-left: 10px;
+    }
+    }

@@ -22,7 +22,11 @@ $gradient: linear-gradient(#ce3975, #8e96f1);
       color: white;
     }
     
-    .btn_2 {
+
+  }   
+  
+  .btn_2 {
+      margin: 10px;
       text-align: center;
       background-color: rgb(255, 255, 255);
       color: rgb(0, 0, 0);
@@ -42,4 +46,3 @@ $gradient: linear-gradient(#ce3975, #8e96f1);
       background-color: rgba(255, 255, 255, 0.5);
       filter: none;
     }
-  }

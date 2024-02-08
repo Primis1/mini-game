@@ -9,7 +9,7 @@ $tr20: translate3d(0, 0, 20px);
 }
 
 .wave {
-  background: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 1600 198'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: url(%23linear-gradient); fill-rule: evenodd; stroke-width: 0px; %7D %3C/style%3E%3ClinearGradient id='linear-gradient' x1='800' y1='368.26' x2='800' y2='101.4' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230ff6f6'/%3E%3Cstop offset='1' stop-color='%237feeff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath class='cls-1' d='M1600,121C1289,121,1190.1-.25,789,0,389,0,289,121,0,121v77h1600s0-48,0-77Z'/%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1600 198' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' id='Layer_1'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: url(%23linear-gradient); fill-rule: evenodd; stroke-width: 0px; %7D %3C/style%3E%3ClinearGradient gradientUnits='userSpaceOnUse' y2='101.4' x2='800' y1='368.26' x1='800' id='linear-gradient'%3E%3Cstop stop-color='%23211468' offset='0'%3E%3C/stop%3E%3Cstop stop-color='%23fb565cf7' offset='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M1600,121C1289,121,1190.1-.25,789,0,389,0,289,121,0,121v77h1600s0-48,0-77Z' class='cls-1'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: repeat-x;
   position: absolute;
   bottom:  0px;
