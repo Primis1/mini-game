@@ -1,32 +1,28 @@
-import  Card  from './components/card/card.tsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState} from 'react';
+import Card from '../card/card.tsx';
 import './input.scss'
 
 
 export default function Input() {
 
-    const [resp, setResp] = useState([])
+    const [resp, setResp] = useState([]);
     
- useEffect ( () => {
-        fetch('http://www.omdbapi.com/?t=${}')
-        .then(resp = setResp(resp))
-        .catch(error => console.error('Error:', error));
-
-    },[])
+    const search = async (q) => {
+        fetch('')
+        .then
+    }
 
     return(
         <section className='search-bar'>
 
             <form>
-                <input type="text" placeholder='Type something' onChange={(event)=> console.log(event)}/>
+                <input type="text" placeholder='Type something' onChange={(e) => search(e.target.value)}/>
                 <button className='btn_2' title='' type='submit'><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
             </form>
 
-            <Card
-            
-            />
+            <Card />
 
         </section>
     )

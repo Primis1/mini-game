@@ -7,7 +7,7 @@ export default function Header() {
     return (
           <div className='container'>
             <div className="header__inner">
-              <h1 className='logo__inner'>University-List</h1>
+              <h1 className='logo__inner'>Movie for Day</h1>
             
               <div className='items'>
                 <ul><a href="https://github.com/Primis1" target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faGithubAlt} /></a></ul>
