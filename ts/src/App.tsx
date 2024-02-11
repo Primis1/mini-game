@@ -1,5 +1,5 @@
 import './reset.css'
-import  Input  from './components/input/input.tsx'
+import  Input  from './components/input/input.jsx'
 import  Wave  from './components/wave/wave.tsx'
 import  Header  from './components/header/header.tsx'
 
