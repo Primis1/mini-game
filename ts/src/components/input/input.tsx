@@ -11,11 +11,11 @@ export default function Input() {
     
     
 
- const search = async (q: string) => {
-    const res = await fetch('http://www.omdbapi.com/?' + new URLSearchParams({ s: q }) + '&apikey=b4530e47');
-    const data = await res.json();
-    setResp(data.Search);
-}
+    const search = async (q: string) => {
+        const res = await fetch('https://www.omdbapi.com/?' + new URLSearchParams({ s: q }) + '&apikey=b4530e47');
+        const data = await res.json();
+        setResp(data.Search);
+    }
 
 
     return(
@@ -28,12 +28,12 @@ export default function Input() {
  
             {resp && resp.length > 0 && 
                 <div className="line__wrapper">
-                    { resp && 
-                    resp.map((movie: {imdbID: string, Title: string, Type: string, Year: string}) => (
+                    {resp && 
+                        resp.map((movie: {imdbID: string, Title: string, Type: string, Year: string}) => (
                         <Card key={movie.imdbID} name={movie.Title} genre={movie.Type} year={movie.Year}/>
-                    ))}
-                </div>
-            }
+                        )
+                    )}
+                </div>}
 
         </section>
     )
