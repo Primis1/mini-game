@@ -11,9 +11,19 @@
     backdrop-filter: blur(5px);
     overflow-y: scroll;
 
+    animation: appear 0.2s ease-in-out;
+
+    @keyframes appear {
+        0% { clip-path: inset(0 0 100% 0); }
+        100% { clip-path: inset(0); }
+    }
+
     .line__inner {
+        width: px;
+        height: px;
         display: flex;
         align-items: center;
+        
         padding: 5px 25px;
         background-color: rgba(81, 81, 81, 0.37);
         border-radius: 25px;
@@ -21,12 +31,12 @@
     }
 
 
-    // .line {        
-    //     justify-content: space-between;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     margin: 15px;
-    // }
+    .line {        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 15px;
+    }
 }
 

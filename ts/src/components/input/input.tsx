@@ -26,11 +26,14 @@ export default function Input() {
                 <button className='btn_2' title='' type='submit'><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
             </form>
  
-            <div className="line__wrapper">
-                { resp && resp.map((movie) => (
-                    <Card key={movie.imdbID} name={movie.Title} genre={movie.Type} year={movie.Year}/>
-                ))}
-            </div>
+            {resp && resp.length > 0 && 
+                <div className="line__wrapper">
+                    { resp && 
+                    resp.map((movie: {imdbID: string, Title: string, Type: string, Year: string}) => (
+                        <Card key={movie.imdbID} name={movie.Title} genre={movie.Type} year={movie.Year}/>
+                    ))}
+                </div>
+            }
 
         </section>
     )
